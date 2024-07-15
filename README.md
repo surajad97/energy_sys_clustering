@@ -1,2 +1,3 @@
-# energy_sys_clustering
-Clustering to determine representative days for input data for an energy systems model
+## Clustering of time series data for energy systems models
+
+Energy system models are key tools in designing the energy systems of the future. They optimize the design and operation of a power system, i.e., the set of technologies which produce, store, and transmit electricity. An energy systems model typically uses as inputs the technology CAPEXs, fuel prices (coal, natural gas, biomass, hydrogen), power demand, and capacity factors of renewable energy. The latter are time-dependent, they vary throughout the day and the year. Typically, the model is run for a set of days with historical or projected future data to simulate the requirements of the system. However, using a whole year of data (8760 h) is often impractical, as the computational time rises. Therefore, it can be preferential to select representative days from the entire year which capture the variation in the data set. Here, we use k-means clustering to determine these represenative days (similar to {cite}`heuberger2017power`).
